@@ -2,14 +2,14 @@ module.exports = {
     development: {
       client: 'sqlite3',
       connection: {
-        filename: './dev.sqlite3' // Nome do arquivo do banco de dados
+        filename: './dev.sqlite3'
       },
-      useNullAsDefault: true, // Necessário para SQLite
+      useNullAsDefault: true,
       migrations: {
-        directory: './migrations' // Pasta onde as migrations serão armazenadas
+        directory: './migrations'
       },
       seeds: {
-        directory: './seeds' // Pasta onde os seeds serão armazenados (opcional)
+        directory: './seeds'
       }
     }
   };

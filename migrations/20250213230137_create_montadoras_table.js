@@ -19,7 +19,7 @@ exports.up = function(knex) {
       table.increments('id').primary();
       table.string('nome').notNullable();
       table.string('endereco');
-      table.timestamps(true, true); // created_at e updated_at
+      table.timestamps(true, true);
     });
   };
   

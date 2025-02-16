@@ -20,8 +20,8 @@ exports.up = function(knex) {
       table.string('modelo').notNullable();
       table.string('marca').notNullable();
       table.integer('ano');
-      table.integer('montadora_id').unsigned().notNullable(); // Chave estrangeira para a tabela de montadoras
-      table.foreign('montadora_id').references('id').inTable('montadoras'); // Define a chave estrangeira
+      table.integer('montadora_id').unsigned().notNullable(); 
+      table.foreign('montadora_id').references('id').inTable('montadoras');
       table.timestamps(true, true);
     });
   };
